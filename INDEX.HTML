@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>M.K TECH — Home Services</title>
+  <style>
+    :root{--accent:#0b72ff;--muted:#6b7280;--card:#ffffff}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Segoe UI,Helvetica,Arial,sans-serif;background:#f3f4f6;margin:0;color:#111}
+    .container{max-width:900px;margin:24px auto;padding:18px}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.06);overflow:hidden}
+
+    header.top{display:flex;align-items:center;gap:16px;padding:18px}
+    .logo{width:84px;height:84px;border-radius:8px;background:linear-gradient(135deg,#0b72ff22,#8b5cf622);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:18px}
+    .title h1{margin:0;font-size:20px;letter-spacing:0.2px}
+    .title p{margin:2px 0 0;color:var(--muted);font-size:13px}
+
+    .row{display:flex;gap:18px;padding:18px;border-top:1px solid #eef2f7}
+    .col{flex:1}
+    .services ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+    .svc{background:#fafafa;padding:10px;border-radius:8px;border:1px solid #f1f5f9;display:flex;align-items:flex-start;gap:10px}
+    .svc svg{flex-shrink:0;margin-top:4px}
+    .svc h4{margin:0;font-size:14px}
+    .svc p{margin:4px 0 0;color:var(--muted);font-size:12px}
+
+    .contact{padding:18px;border-top:1px solid #eef2f7;display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .contact .me{font-size:14px}
+    .contact small{display:block;color:var(--muted);font-size:12px}
+
+    .actions{display:flex;gap:8px}
+    button.btn{background:var(--accent);color:white;border:none;padding:10px 14px;border-radius:8px;cursor:pointer;font-weight:600}
+    button.ghost{background:#f8fafc;border:1px solid #e6eefc;color:#0b72ff}
+
+    footer{padding:12px 18px;background:#fbfdff;border-top:1px solid #eef2f7;font-size:12px;color:var(--muted)}
+
+    /* Print friendly */
+    @media print{
+      body{background:white}
+      .container{max-width:100%;margin:0;padding:0}
+      header.top .logo{box-shadow:none}
+      button{display:none}
+      .card{box-shadow:none;border:none}
+      @page{size:A4; margin:12mm}
+    }
+
+    /* small screens */
+    @media (max-width:640px){
+      header.top{flex-direction:row}
+      .row{flex-direction:column}
+      .services ul{grid-template-columns:repeat(1,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header class="top">
+        <div class="logo">M.K<br>TECH</div>
+        <div class="title">
+          <h1>M.K TECH — Cyber Home Services</h1>
+          <p>Reliable, safe &amp; legitimate document &amp; online services — print-ready flyer</p>
+        </div>
+        <div style="margin-left:auto;text-align:right">
+          <small style="color:var(--muted);display:block">Template Owner</small>
+          <strong>NAMEER KHAN BASIT KHAN</strong>
+          <div style="font-size:12px;color:var(--muted)">Patelwadi Plot No 258, Umar Masjid, Javal, Nandurbar</div>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col services">
+          <h3 style="margin:0 0 8px">Our Services</h3>
+          <ul>
+            <li class="svc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.209 0 4-1.791 4-4s-1.791-4-4-4-4 1.791-4 4 1.791 4 4 4z" stroke="#0b72ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h4>PAN Card — Application & Corrections</h4><p>Guidance to apply for new PAN (Minor/Major), corrections & form filling support.</p></div></li>
+
+            <li class="svc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z" stroke="#0b72ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h4>Aadhaar — Address Update & Print</h4><p>Help with online address update guidance and printing Aadhaar (you must use UIDAI-approved flow).</p></div></li>
+
+            <li class="svc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18" stroke="#0b72ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h4>Voter ID / Election Card</h4><p>Assistance for new enrollment & corrections — official application guidance only.</p></div></li>
+
+            <li class="svc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 7h18M6 3v18M18 3v18" stroke="#0b72ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h4>Bank Account Help</h4><p>Walkthrough for opening accounts (Airtel Payments Bank &amp; Kotak Mahindra) and required documents.</p></div></li>
+
+            <li class="svc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 7h18M3 12h18M3 17h18" stroke="#0b72ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h4>Driving Licence — Official Booking Guidance</h4><p>We guide you through RTO booking, test scheduling & legitimate processes (no shortcuts).</p></div></li>
+
+            <li class="svc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16v10H4z" stroke="#0b72ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h4>Passport-size Photo Print & Design</h4><p>High-quality passport photos and print-ready layouts for HP photo paper at home.</p></div></li>
+
+            <li class="svc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 7h18v10H3z" stroke="#0b72ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h4>Website & Online Services</h4><p>Basic website creation, online project help and tutorials to manage your services online.</p></div></li>
+
+            <li class="svc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="#0b72ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h4>Paper Designing & Print Layouts</h4><p>Design flyers, ID cards (non-official templates), certificates layout and print-ready files.</p></div></li>
+
+            <li class="svc"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2l3 7h7l-5.5 4 2 7-6-4-6 4 2-7L2 9h7z" stroke="#0b72ff" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><h4>Birth / Civil Documents — Guidance</h4><p>Assistance to obtain certified copies or to complete official procedures in coordination with local authorities.</p></div></li>
+
+          </ul>
+        </div>
+
+        <div class="col" style="min-width:260px">
+          <h3 style="margin-top:0">Why choose M.K TECH?</h3>
+          <p style="color:var(--muted)">We provide patient, step-by-step guidance for official processes, form-filling help, print-ready files, and website/online service support. We do <strong>not</strong> assist in producing fake or fraudulent documents. All assistance is aimed at legitimate, legal processing.</p>
+
+          <div style="margin-top:12px;background:#fff;padding:12px;border-radius:8px;border:1px solid #f1f5f9">
+            <h4 style="margin:0 0 8px">Contact</h4>
+            <div class="me"><strong>NAMEER KHAN BASIT KHAN</strong></div>
+            <small>Patelwadi Plot No 258, Umar Masjid, Javal, Nandurbar</small>
+            <div style="margin-top:8px">Phone: <strong>9284136998</strong></div>
+            <div style="margin-top:6px">Email: <strong>nameerkhan3700@gmail.com</strong></div>
+
+            <div style="margin-top:12px" class="actions">
+              <button class="btn" onclick="window.print()">Print Flyer</button>
+              <button class="ghost" onclick="downloadHTML()">Download HTML</button>
+            </div>
+          </div>
+
+          <div style="margin-top:12px;font-size:12px;color:var(--muted)">
+            <strong>Notes:</strong>
+            <ul style="padding-left:18px;margin:6px 0">
+              <li>Customize logo text or replace with your image (edit the .logo div).</li>
+              <li>Set your local printer to 'Photo Paper' (HP Photo Paper) and select A4 or the paper size you use.</li>
+              <li>Always follow official government portals for ID applications (UIDAI, NSDL, Voter portal, RTO, etc.).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        M.K TECH • Legitimate document guidance &amp; home printing services • For legal use only
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function downloadHTML(){
+      const html = '<!doctype html>\n' + document.documentElement.outerHTML;
+      const blob = new Blob([html], {type: 'text/html'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'M-K-TECH-template.html';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+  </script>
+</body>
+</html>
